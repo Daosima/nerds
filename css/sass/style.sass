@@ -54,11 +54,11 @@ ul
 		background-color: #d7373b;
 
 .container	
-	padding: 0 140px
-	margin: 0 0
-	min-width: 1160px
-.container-nav
-	padding: 0 70px 0 140px 
+	padding: 0 0px
+	margin: 0 140
+	max-width: 1160px
+// .container-nav
+// 	padding: 0 70px 0 140px 
 
 .header 
 	background-color:#eeeeee
@@ -106,7 +106,8 @@ ul
 		padding: 0 0 0 55px
 
 .benefits
-	padding: 80px 0 0 0
+	padding: 80px 0  0
+	margin: 0 0 98px 0
 	&__list
 		display: flex
 		justify-content: space-between
@@ -130,24 +131,35 @@ ul
 		color: #ffffff
 
 .wrapper-colums
-	position: relative
-	margin-top: 160px
-	.about-us:before
-		position: absolute
-		content: ""
+	// position: relative
+	display: flex
+	flex-direction: grow
+	margin: 0 0 0 0
+	padding: 80px 0 0 0
+	border-top: 3px solid #eeeeee
+	// .about-us:before
+	// 	position: absolute
+	// 	content: ""
 
-		width: 1160px
-		height: 2.5px
+	// 	width: 1160px
+	// 	height: 2.5px
 
-		transform: translate(0,-70px)
+	// 	transform: translate(0,-70px)
 
-		background-color: #eeeeee
+	// 	background-color: #eeeeee
+		
 	.about-us
-		&__item
+		&__list
+			display: flex
+			flex-direction: column
 		&__line
+			display: inline-block
 			width: 25px
+			margin: 0 0 4px 0
 			border: solid 1px #fb565a
-
+		&__text
+			display: inline-block
+			margin: 0 0 40px 11px
 		&__title
 			position:
 			padding-bottom: 35px
@@ -159,10 +171,15 @@ ul
 			padding-bottom: 35px
 			font-weight: 700
 	.successes
+		margin: 0 0 0 150px
 		&__title
-			padding: 40px 0 50px 0
+			padding: 40px 0 50px 17px
 			font-size: 16px
 			font-weight: 700
+		&__list
+			display: flex
+			justify-content: space-between
+			padding: 0
 		&__item
 			.successes-item
 				&__big
@@ -170,9 +187,8 @@ ul
 					font-size: 45px
 					font-weight: 700
 				&__small
-					line-height: 18px
-
-
+					line-height: 18px			
+					color: #666c70
 .clients
 	padding: 50px 0 50px 0
 	border-top: solid 2px #eeeeee
