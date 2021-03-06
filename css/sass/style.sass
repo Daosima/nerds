@@ -222,24 +222,52 @@ ul
 			&__button
 				width: 219px
 				height: 50px
-	&__social
-/** 		.footer-social
-				padding-top: 69px
-				padding-left: 140
-			&__list
-				text-align: center
-				list-style: none
-			&__item
-				display: inline-block
-				background-color: #e1e1e1
-				border: solid 15px #e1e1e1
-				border-radius: 50%
-			&__img
-			&__text **/
+
+.footer-social
+	display: flex
+	margin-bottom: 76px
+	&__list
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		width: 280px
+		margin: 0 0 0 0
+		padding: 0
+		list-style-type: none
+	&__item
+		position: relative
+		display: block
+
+		width: 1px
+		height: 1px
+		border: 40px solid #e1e1e1
+		border-radius: 50%
+
+		background-color: #000000 /** #e1e1e1 **/
+
+	&__item-link::before
+		content: ""			
+		position: absolute			
+
+		top: -25px
+		left: -20px
+		width: 44px			
+		height: 44px
 
 
+		background-repeat: no-repeat			
+		background-position: center center			
 
-
+	&__item-link--vk::before
+			background-image: url("../svg/vk-icon.svg")
+	&__item-link--fb::before
+			background-image: url("../svg/fb-icon.svg")
+	&__item-link--inst::before
+		background-image: url("../svg/insta-icon.svg")
+	&__title, &__text
+		padding: 0 0 0 140px
+	&__text
+		margin: 0
 
 
 
