@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body
+	width: 100%
 	margin: 0
 	padding: 0
 	font-family: "Roboto", Arial, sans-serif
@@ -16,6 +17,7 @@ body
 	background-repeat: none
 a
 	text-decoration: none
+
 p
 	color: #283136
 	text-align: left
@@ -51,7 +53,14 @@ ul
 		box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 		background-color: #d7373b;
 
-.header
+.container	
+	padding: 0 140px
+	margin: 0 0
+	min-width: 1160px
+.container-nav
+	padding: 0 70px 0 140px 
+
+.header 
 	background-color:#eeeeee
 	background-image: url(../img/header_bg.png)
 	background-position: 0 0
@@ -62,7 +71,8 @@ ul
 	display: flex
 	justify-content: space-between
 	align-items: baseline
-	padding: 50px 140px 18px 140px
+	max-width: 1160px
+	padding: 50px 0 18px 0
 	&__list
 		display: flex
 		justify-content: space-between
@@ -78,17 +88,33 @@ ul
 			padding-right: 26px
 .carousel
 	&__item
+		display: flex
+		justify-content: space-between
 		text-align: left
 	&__title
+		display: block
+		width: 390px
+		margin: 67px 0 0 0
 		font-size: 55px
 		line-height: 55px
+	&__text
+		margin: 28px 0 61px 0
+	a	
+		padding: 18px 55px 18px 53px
+		color: #ffffff
+	&__img
+		padding: 0 0 0 55px
 
 .benefits
-	padding: 80px 0 27px 0
+	padding: 80px 0 0 0
+	&__list
+		display: flex
+		justify-content: space-between
+		padding: 0
+		
 	&__item
-		padding-bottom: 80px
-		a
-			padding: 18px 39px 18px 39px
+		padding: 0 100px 0 0
+
 	&__title
 		padding: 26px 0 8px 0
 		text-align: left
@@ -99,9 +125,23 @@ ul
 	&__text
 		padding-bottom: 35px
 
+	a
+		padding: 18px 39px 18px 39px
+		color: #ffffff
+
 .wrapper-colums
-	padding: 80px 0 76px 0
-	border: solid 2px #eeeeee
+	position: relative
+	margin-top: 160px
+	.about-us:before
+		position: absolute
+		content: ""
+
+		width: 1160px
+		height: 2.5px
+
+		transform: translate(0,-70px)
+
+		background-color: #eeeeee
 	.about-us
 		&__item
 		&__line
@@ -109,10 +149,12 @@ ul
 			border: solid 1px #fb565a
 
 		&__title
+			position:
 			padding-bottom: 35px
 			font-size: 45px
 			font-weight: 500
 			line-height: 45px
+
 		&__subtitle
 			padding-bottom: 35px
 			font-weight: 700
