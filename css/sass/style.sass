@@ -7,7 +7,7 @@ body
 	font-family: "Roboto", Arial, sans-serif
 	font-size: 16px
 	line-height: 24px
-	font-weight: 400
+
 	text-transform: none
 	color: #000000
 
@@ -267,6 +267,7 @@ ul
 	&__text
 		margin: 0
 
+// sass catalog
 
 .big-title
 	margin: 0
@@ -285,17 +286,79 @@ ul
 		display: flex
 		justify-content: space-between
 	&__item
-		position: relative
+		font-weight: 700
 		.item-mini
+			font-weight: 400
 			&__list
 				display: flex
 				justify-content: space-between
 			&__item
 				padding: 0 26px 0 0
+				text-transform: uppercase
+				font-size: 14px
 				img
 					margin-left: 48px
+					margin-right: 20px
+			&__item--collor
+				color: #cfcfcf
+				
+.catalog-wrapper
+	display: flex
+	aside
+		width: 260px
+		.sort
+			.slider
+			&__text-wrap
+		.grid
+			&__header
+			&__list
+				padding: 0
+			&__item
+				input
+				label
 
-	
-		
+		.features
+			&__list
+				padding: 0
+			&__item
+				input
+				label
+				
+.projects
+	width: 780px
+	margin: 0 0 0 100px
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding: 0
+	&__item
+		margin: 0 20px 33px 0
+
+	.links
+		&__list
+			display: flex
+			justify-content: space-between
+			width: 440px 
+			padding: 0
+		&__item
+			width: 50px
+			height: 50px
+			padding: 12px 0 0 0
+			margin-right: 30px
+			text-align: center	
+			a
+				padding: 19px 23px
+				color: #000000
+				border: 5px solid #eeeeee
+				background-color: #eeeeee
+			a:hover		
+				background-color: #ffffff
+
+				
+		&__item-long
+			width: 260px
+			a
+				padding: 19px 79px
 	
 
