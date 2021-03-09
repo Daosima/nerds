@@ -17,10 +17,10 @@
 				<img src="/svg/nerds-logo.svg" width="160" height="65" alt="Логотип">
 			</a>
 			<ul class="navigation__list">
-				<li class="navigation__item"><a href="#"></a>студия</li>
-				<li class="navigation__item"><a href="#"></a>клиенты</li>
-				<li class="navigation__item"><a href="#"></a>магизин</li>
-				<li class="navigation__item"><a href="#"></a>контакты</li>
+				<li class="navigation__item"><a href="#">студия</a></li>
+				<li class="navigation__item"><a href="#">клиенты</a></li>
+				<li class="navigation__item"><a href="#">магизин</a></li>
+				<li class="navigation__item"><a href="#">контакты</a></li>
 			</ul>
 			<a class="basket">
 				<img src="/svg/cart-icon.svg" alt="корзина">
@@ -52,53 +52,93 @@
 		<div class="catalog-wrapper">
 			<aside>
 				<section class="sort">
-					<div class="slider"></div>
-					<div class="slider__text-wrap">
-						<p>от</p>
-						<p>0</p>
-						<p>до</p>
-						<p>15 000</p>
+					<div class="slider">
+						<div class="range">
+							<div class="range__line"></div>
+							<div class="range__line-left"></div>
+							<div class="range__range-left">
+								<img src="img/filter-button.png" width="20" height="23" alt="Левый ползунок">
+							</div>
+							<div class="range__range-right">
+								<img src="img/filter-button.png" width="20" height="23" alt="Правый ползунок">
+							</div>
+						</div>
+					</div>
+					<div class="slider__cost">
+						<p class="slider__cost-range">
+							<label for="min-cost">ОТ</label>
+							<input id="min-cost" type="text" name="min-cost" placeholder="0" value="0">
+						</p>
+						<p class="slider__cost-range">
+							<label for="max-cost">ДО</label>
+							<input id="max-cost" type="text" name="max-cost" placeholder="15 000" value="15 000">
+						</p>
 					</div>
 				</section>
 				<section class="grid">
-					<p class="grid__header">Сетка:</p>
+					<h2 class="grid__header">Сетка:</h2>
 					<ul class="grid__list">
 						<li class="grid__item">
-							<input type="radio" name="grid__item--select" id="grid__item--select" value="on">
-							<lable>Адаптированная</lable>
+							<label class="check">
+								<input class="check__input" type="radio" name="radio" id="1" checked>
+								<span class="check__radio"></span>
+								<p class="check__text">Адаптивная</p>
+							</label>
 						</li>
 						<li class="grid__item">
-							<input type="radio" name="grid__item--select" id="grid__item--select" value="off">
-							<lable>Фиксированная</lable>
+							<label class="check">
+								<input class="check__input" type="radio" name="radio" id="2">
+								<span class="check__radio"></span>
+								<p class="check__text">Фиксированная</p>
+							</label>
 						</li>
 						<li class="grid__item">
-							<input type="radio" name="grid__item--select" id="grid__item--select" value="off">
-							<lable>Резиновая</lable>
+							<label class="check">
+								<input class="check__input" type="radio" name="radio" id="3">
+								<span class="check__radio"></span>
+								<p class="check__text">Резиновая</p>
+							</label>
 						</li>
 					</ul>
 				</section>
+
 				<section class="features">
-					<p class="features__header">Сетка:</p>
+					<h2 class="features__header">Особенности:</h2>
 					<ul class="features__list">
 						<li class="features__item">
-							<input type="checkbox" name="features__item--select" id="features__item--select" value="on">
-							<lable>Слайдер</lable>
+							<label class="check">
+								<input class="check__input" type="checkbox" name="checkbox" id="1" checked>
+								<span class="check__checkbox"></span>
+								<p class="check__text">Слайдер</p>
+							</label>
 						</li>
 						<li class="features__item">
-							<input type="checkbox" name="features__item--select" id="features__item--select" value="off">
-							<lable>Блок преимуществ</lable>
+							<label class="check">
+								<input class="check__input" type="checkbox" name="checkbox" id="2">
+								<span class="check__checkbox"></span>
+								<p class="check__text">Блок Приимущества</p>
+							</label>
 						</li>
 						<li class="features__item">
-							<input type="checkbox" name="features__item--select" id="features__item--select" value="on">
-							<lable>Новости</lable>
+							<label class="check">
+								<input class="check__input" type="checkbox" name="checkbox" id="3" checked>
+								<span class="check__checkbox"></span>
+								<p class="check__text">Новости</p>
+							</label>
 						</li>
 						<li class="features__item">
-							<input type="checkbox" name="features__item--select" id="features__item--select" value="off">
-							<lable>Галерея</lable>
+							<label class="check">
+								<input class="check__input" type="checkbox" name="checkbox" id="3">
+								<span class="check__checkbox"></span>
+								<p class="check__text">Галерея</p>
+							</label>
 						</li>
 						<li class="features__item">
-							<input type="checkbox" name="features__item--select" id="features__item--select" value="off">
-							<lable>Корзина</lable>
+							<label class="check">
+								<input class="check__input" type="checkbox" name="checkbox" id="3">
+								<span class="check__checkbox"></span>
+								<p class="check__text">Корзина</p>
+							</label>
 						</li>
 					</ul>
 				</section>
@@ -115,7 +155,7 @@
 					<li class="projects__item"><img src="/img/projects/6.png" alt="kvast" width="360" height="616"></li>
 				</ul>
 				<ul class="links__list">
-					<li class="links__item"><a class="number-link" href="#">1</a></li>
+					<li class="links__item"><a class="number-link-active" href="#">1</a></li>
 					<li class="links__item"><a class="number-link" href="#">2</a></li>
 					<li class="links__item"><a class="number-link" href="#">3</a></li>
 					<li class="links__item links__item-long"><a class="text-link" href="#">следующая</a></li>
@@ -126,7 +166,7 @@
 </div>
 <div class="container">
 	<footer class="footer">
-		<div class="footer__map">
+		<div class="footer__map footer__map--catalog">
 			<div class="footer__contacts footer-contacts">
 				<h4 class="footer-contacts__title">NЁRDS DESIGN STUDIO</h4>
 				<p  class="footer-contacts__text">
